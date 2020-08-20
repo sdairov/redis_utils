@@ -1,4 +1,4 @@
-module redis
+module redis-utils
 
 go 1.13
 
