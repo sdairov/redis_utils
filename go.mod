@@ -1,4 +1,4 @@
-module github.com/sdairov/redis-utils
+module github.com/sdairov/redis_utils
 
 go 1.13
 
