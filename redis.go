@@ -60,11 +60,13 @@ func SetKey(rd *redis.Client, key string, value interface{}, duration int) error
 }
 
 
-func GetVal(rd *redis.Client, key string, value interface{}) (interface{}, error) { // получение данных по ключу
+func GetVal(rd *redis.Client, key string) (interface{}, error) { // получение данных по ключу
 	js, err := rd.Get(key).Bytes()
 	if err != nil {
 		return nil, err
 	}
+
+	var value interface{}
 
 	err = json.Unmarshal(js, value)
 	if err != nil {
