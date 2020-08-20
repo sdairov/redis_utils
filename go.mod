@@ -1,4 +1,4 @@
-module redis-utils
+module github.com/sdairov/redis-utils
 
 go 1.13
 
